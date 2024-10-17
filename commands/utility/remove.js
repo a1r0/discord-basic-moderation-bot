@@ -11,7 +11,7 @@ module.exports = {
 	async execute(interaction) {
         const amount = interaction.options.getString('amount')
         const messages = await interaction.channel.messages.fetch({limit: amount})
-        const messagesArray = await Array.from(messages.values()).reverse();
+        const messagesArray = Array.from(messages.values()).reverse();
 
 		try {
 			await interaction.deferReply()
