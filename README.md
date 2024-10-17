@@ -49,4 +49,4 @@ In this example, the last 10 messages from the current channel will be moved to 
 ```
 
 4. Run the bot
-   ```node index.js
+   ```node index.js```
